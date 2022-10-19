@@ -1,4 +1,4 @@
-﻿namespace ButtonBackgroundImageMoveDemo
+﻿namespace ChessMazeUI
 {
     partial class Form1
     {
@@ -41,7 +41,7 @@
             // 
             // button1
             // 
-            this.button1.BackgroundImage = global::ButtonBackgroundImageMoveDemo.Properties.Resources.ninja;
+            this.button1.BackgroundImage = global::ChessMazeUI.Properties.Resources.ninja;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.Location = new System.Drawing.Point(52, 71);

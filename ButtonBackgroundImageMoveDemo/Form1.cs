@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace ButtonBackgroundImageMoveDemo
+namespace ChessMazeUI
 {
     public partial class Form1 : Form
     {
@@ -16,7 +16,7 @@ namespace ButtonBackgroundImageMoveDemo
          * 2. Click Add Resources menu to add new image resource named as imageName
          * 3. access the new added resource by ProjectNameSpace.Properties.Resources.imageName
          */
-        private readonly Image _character = ButtonBackgroundImageMoveDemo.Properties.Resources.ninja;
+        private readonly Image _character = ChessMazeUI.Properties.Resources.ninja;
         private int _currentPosition = 0;
         private readonly Button[] _gridOfButtons;
 
