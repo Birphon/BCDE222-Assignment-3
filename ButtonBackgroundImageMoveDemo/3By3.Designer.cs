@@ -37,6 +37,8 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.Home = new System.Windows.Forms.Button();
+            this.MoveLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -136,11 +138,32 @@
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button_Click);
             // 
+            // Home
+            // 
+            this.Home.Location = new System.Drawing.Point(98, 267);
+            this.Home.Name = "Home";
+            this.Home.Size = new System.Drawing.Size(75, 23);
+            this.Home.TabIndex = 10;
+            this.Home.Text = "Home";
+            this.Home.UseVisualStyleBackColor = true;
+            this.Home.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // MoveLbl
+            // 
+            this.MoveLbl.AutoSize = true;
+            this.MoveLbl.Location = new System.Drawing.Point(231, 71);
+            this.MoveLbl.Name = "MoveLbl";
+            this.MoveLbl.Size = new System.Drawing.Size(38, 15);
+            this.MoveLbl.TabIndex = 11;
+            this.MoveLbl.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(332, 302);
+            this.ClientSize = new System.Drawing.Size(369, 302);
+            this.Controls.Add(this.MoveLbl);
+            this.Controls.Add(this.Home);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -154,6 +177,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -168,5 +192,7 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button Home;
+        private System.Windows.Forms.Label MoveLbl;
     }
 }
