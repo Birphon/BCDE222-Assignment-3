@@ -31,6 +31,8 @@ namespace ChessMazeUI
         {
             this.Make5x5Level = new System.Windows.Forms.Button();
             this.AddParts = new System.Windows.Forms.Button();
+            this.MoveLbl = new System.Windows.Forms.Label();
+            this.CurrentPiece = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Make5x5Level
@@ -53,16 +55,37 @@ namespace ChessMazeUI
             this.AddParts.UseVisualStyleBackColor = true;
             this.AddParts.Click += new System.EventHandler(this.AddParts_Click);
             // 
+            // MoveLbl
+            // 
+            this.MoveLbl.AutoSize = true;
+            this.MoveLbl.Location = new System.Drawing.Point(650, 92);
+            this.MoveLbl.Name = "MoveLbl";
+            this.MoveLbl.Size = new System.Drawing.Size(38, 15);
+            this.MoveLbl.TabIndex = 2;
+            this.MoveLbl.Text = "label1";
+            // 
+            // CurrentPiece
+            // 
+            this.CurrentPiece.AutoSize = true;
+            this.CurrentPiece.Location = new System.Drawing.Point(650, 111);
+            this.CurrentPiece.Name = "CurrentPiece";
+            this.CurrentPiece.Size = new System.Drawing.Size(38, 15);
+            this.CurrentPiece.TabIndex = 3;
+            this.CurrentPiece.Text = "label1";
+            // 
             // FiveByFive
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.CurrentPiece);
+            this.Controls.Add(this.MoveLbl);
             this.Controls.Add(this.AddParts);
             this.Controls.Add(this.Make5x5Level);
             this.Name = "FiveByFive";
             this.Text = "FiveByFive";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -70,5 +93,7 @@ namespace ChessMazeUI
 
         private System.Windows.Forms.Button Make5x5Level;
         private System.Windows.Forms.Button AddParts;
+        private System.Windows.Forms.Label MoveLbl;
+        private System.Windows.Forms.Label CurrentPiece;
     }
 }

@@ -18,12 +18,22 @@ namespace ChessMazeUI
         private readonly Image _rook = ChessMazeUI.Properties.Resources.Rook;
         private readonly Image _bishop = ChessMazeUI.Properties.Resources.Bishop;
 
+        private int _count = 0;
+        private int _currentPosition = 0;
+
         private string _clickedText;
 
         public FiveByFive()
         {
             InitializeComponent();
             this.Text = "5x5 Game";
+        }
+
+        private int MoveCount()
+        {
+            _count++;
+            MoveLbl.Text = $"Move count is: {_count}";
+            return _count;
         }
 
         protected void DefaultButton()
