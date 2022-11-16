@@ -6,13 +6,11 @@ namespace ChessMazeUI
 {
     public partial class Form1 : Form
     {
-        private readonly Image _background = ChessMazeUI.Properties.Resources.Blank;
+        private readonly Image _blank = ChessMazeUI.Properties.Resources.Blank;
         private readonly Image _king = ChessMazeUI.Properties.Resources.King;
         private readonly Image _knight = ChessMazeUI.Properties.Resources.Knight;
         private readonly Image _rook = ChessMazeUI.Properties.Resources.Rook;
         private readonly Image _bishop = ChessMazeUI.Properties.Resources.Bishop;
-
-        private readonly Image _character = ChessMazeUI.Properties.Resources.ninja;
         private int _currentPosition = 0;
         private readonly Button[] _gridOfButtons;
         private int _count = 0;
@@ -31,37 +29,37 @@ namespace ChessMazeUI
             button1.BackgroundImageLayout = ImageLayout.Zoom;
             lblChange = "Rook";
 
-            button4.BackgroundImage = _background;
+            button2.BackgroundImage = _blank;
+            button2.BackgroundImageLayout = ImageLayout.Zoom;
+            lblChange = "Empty";
+
+            button3.BackgroundImage = _knight;
+            button3.BackgroundImageLayout = ImageLayout.Zoom;
+            lblChange = "Knight";
+
+            button4.BackgroundImage = _blank;
             button4.BackgroundImageLayout = ImageLayout.Zoom;
             lblChange = "Empty";
 
-            button7.BackgroundImage = _knight;
-            button7.BackgroundImageLayout = ImageLayout.Zoom;
-            lblChange = "";
-
-            button2.BackgroundImage = _background;
-            button2.BackgroundImageLayout = ImageLayout.Zoom;
-            lblChange = "Rook";
-
-            button5.BackgroundImage = _background;
+            button5.BackgroundImage = _blank;
             button5.BackgroundImageLayout = ImageLayout.Zoom;
-            lblChange = "Rook";
+            lblChange = "Empty";
 
-            button8.BackgroundImage = _knight;
-            button8.BackgroundImageLayout = ImageLayout.Zoom;
-            lblChange = "Rook";
-
-            button3.BackgroundImage = _bishop;
-            button3.BackgroundImageLayout = ImageLayout.Zoom;
-            lblChange = "Rook";
-
-            button6.BackgroundImage = _bishop;
+            button6.BackgroundImage = _rook;
             button6.BackgroundImageLayout = ImageLayout.Zoom;
             lblChange = "Rook";
 
+            button7.BackgroundImage = _bishop;
+            button7.BackgroundImageLayout = ImageLayout.Zoom;
+            lblChange = "Bishop";
+
+            button8.BackgroundImage = _bishop;
+            button8.BackgroundImageLayout = ImageLayout.Zoom;
+            lblChange = "Bishop";
+
             button9.BackgroundImage = _king;
             button9.BackgroundImageLayout = ImageLayout.Zoom;
-            lblChange = "Rook";
+            lblChange = "King";
         }
 
         private int MoveCount()
@@ -79,7 +77,7 @@ namespace ChessMazeUI
                 Height = 50,
                 Width = 50,
                 Text = "E",
-                BackgroundImage = _background,
+                BackgroundImage = _blank,
                 BackgroundImageLayout = ImageLayout.Zoom,
                 Visible = true,
                 Location = new Point(10, 10)
@@ -102,7 +100,7 @@ namespace ChessMazeUI
 
             if (btnNew.Text == "#")
             {
-                btnNew.BackgroundImage = _background;
+                btnNew.BackgroundImage = _blank;
             }
             else if (btnNew.Text == "$")
             {
@@ -128,33 +126,33 @@ namespace ChessMazeUI
             {
                 button1.BackgroundImage = _rook;
             }
-            if (button4 != _gridOfButtons[_currentPosition])
-            {
-                button4.BackgroundImage = _background;
-            }
-            if (button7 != _gridOfButtons[_currentPosition])
-            {
-                button7.BackgroundImage = _knight;
-            }
             if (button2 != _gridOfButtons[_currentPosition])
             {
-                button2.BackgroundImage = _background;
-            }
-            if (button5 != _gridOfButtons[_currentPosition])
-            {
-                button5.BackgroundImage = _background;
-            }
-            if (button8 != _gridOfButtons[_currentPosition])
-            {
-                button8.BackgroundImage = _knight;
+                button1.BackgroundImage = _blank;
             }
             if (button3 != _gridOfButtons[_currentPosition])
             {
-                button3.BackgroundImage = _bishop;
+                button3.BackgroundImage = _knight;
+            }
+            if (button4 != _gridOfButtons[_currentPosition])
+            {
+                button4.BackgroundImage = _blank;
+            }
+            if (button5 != _gridOfButtons[_currentPosition])
+            {
+                button5.BackgroundImage = _blank;
             }
             if (button6 != _gridOfButtons[_currentPosition])
             {
-                button6.BackgroundImage = _bishop;
+                button6.BackgroundImage = _rook;
+            }
+            if (button7 != _gridOfButtons[_currentPosition])
+            {
+                button7.BackgroundImage = _bishop;
+            }
+            if (button8 != _gridOfButtons[_currentPosition])
+            {
+                button8.BackgroundImage = _bishop;
             }
             if (button9 != _gridOfButtons[_currentPosition])
             {
