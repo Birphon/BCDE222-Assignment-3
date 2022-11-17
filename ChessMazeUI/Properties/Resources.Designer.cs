@@ -103,9 +103,9 @@ namespace ChessMazeUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ninja {
+        internal static System.Drawing.Bitmap Queen {
             get {
-                object obj = ResourceManager.GetObject("ninja", resourceCulture);
+                object obj = ResourceManager.GetObject("Queen", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
